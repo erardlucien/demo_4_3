@@ -29,8 +29,6 @@
 .breadcrumb-btn:checked ~ .logo-and-label > .label-group > .label-breadcrumb-btn > .closed::before,
 .breadcrumb-btn:checked ~ .logo-and-label > .label-group > .label-breadcrumb-btn > .closed::after {
     background-color: transparent;
-    transform: rotate(180deg);
-    transition: 0.9s;
 }
 
 .breadcrumb-btn:checked ~ .logo-and-label > .label-group > .label-breadcrumb-btn > .opened::before,
@@ -49,6 +47,7 @@
 }
 
 .search-btn:checked ~ .logo-and-label > .label-group > .label-search-btn {
+    transform: rotate(360deg);
     background-color: white;
 }
 
@@ -62,6 +61,16 @@
     display: flex;
     justify-content: space-between;
     margin: 0 0 0 16px;
+}
+
+/* logo */
+
+.logo {
+    transition: 0.9s;
+}
+
+.logo:hover {
+    transform: rotate(360deg);
 }
 
 /* label-group */
@@ -84,7 +93,9 @@
 /* label-breadcrumb-btn */
 
 .label-breadcrumb-btn {
+    display: flex;
     margin: 0 16px 0 0;
+    padding: 10px;
     transition: 0.9s;
 }
 
