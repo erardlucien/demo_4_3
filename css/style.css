@@ -29,6 +29,7 @@
 .breadcrumb-btn:checked ~ .logo-and-label > .label-group > .label-breadcrumb-btn > .closed::before,
 .breadcrumb-btn:checked ~ .logo-and-label > .label-group > .label-breadcrumb-btn > .closed::after {
     background-color: transparent;
+    transition: 0.9s;
 }
 
 .breadcrumb-btn:checked ~ .logo-and-label > .label-group > .label-breadcrumb-btn > .opened::before,
@@ -49,6 +50,7 @@
 .search-btn:checked ~ .logo-and-label > .label-group > .label-search-btn {
     transform: rotate(360deg);
     background-color: white;
+    color: black;
 }
 
 .search-btn:checked ~ .logo-and-label ~ .search {
@@ -59,8 +61,8 @@
 
 .logo-and-label {
     display: flex;
+    padding: 0 16px;
     justify-content: space-between;
-    margin: 0 0 0 16px;
 }
 
 /* logo */
@@ -82,11 +84,13 @@
 /* label-search-btn */
 
 .label-search-btn {
-    margin: -10px 16px 0 0;
-    padding: 10px;
-    border: 0 solid;
-    border-radius: 10px;
     background-color: blue;
+    color: white;
+    height: 20px;
+    width: 15px;
+    text-align: center;
+    border: 0 solid;
+    border-radius: 5px;
     transition: 0.9s;
 }
 
@@ -94,8 +98,8 @@
 
 .label-breadcrumb-btn {
     display: flex;
-    margin: 0 16px 0 0;
-    padding: 10px;
+    padding: 15px;
+    margin: -12px 0 0 0;
     transition: 0.9s;
 }
 
@@ -211,6 +215,12 @@
     .breadcrumb {
         display: flex;
         justify-content: space-between;
+    }
+
+    /* breadcrumb-btn */
+
+    .breadcrumb-btn:checked ~ .logo-and-label ~ .breadcrumb-menu {
+        display: flex;
     }
 
     /* label-group */
