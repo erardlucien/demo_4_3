@@ -69,6 +69,7 @@
 
 .logo {
     font-weight: bold;
+    color: hsla(23, 50%, 45%, 0.9);
 }
 
 .logo:hover {
@@ -89,6 +90,7 @@
     color: white;
     height: 20px;
     width: 15px;
+    margin: -3px 0 0 0;
     text-align: center;
     border: 0 solid;
     border-radius: 5px;
@@ -100,7 +102,7 @@
 .label-breadcrumb-btn {
     display: flex;
     padding: 11px;
-    margin: -11px 0 0 0;
+    margin: -16px 0 0 0;
     transition: 0.9s;
 }
 
@@ -226,7 +228,7 @@
         justify-content: space-between;
     }
 
-    /* breadcrumb-menu */
+    /* breadcrumb-btn */
 
     .breadcrumb-btn:checked ~ .logo-and-label ~ .breadcrumb-menu {
         display: flex;
@@ -243,16 +245,24 @@
 
     .search {
         position: absolute;
-        left: 10%;
-        top: 3px;
+        left: 30%;
+        top: 0; 
     }
 
     /* breadcrumb-menu */
 
     .breadcrumb-menu {
         position: absolute;
-        left: 45%;
-        top: 3px;
+        left: 55%;
+        top: 0;
+    }
+
+    /* breadcrumb-link */
+
+    .breadcrumb-link {
+        display: block;
+        padding: 16px 16px 0;
+        text-decoration: none;  
     }
 
 }
